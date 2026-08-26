@@ -1,7 +1,7 @@
 networks:
-  monitoring-net:
+  prometheus-net:
     external: true
-    name: monitoring-net
+    name: prometheus-net
 
 services:
   cadvisor:
@@ -16,7 +16,7 @@ services:
       - /sys:/sys:ro
       - /var/lib/docker:/var/lib/docker:ro
     networks:
-      - monitoring-net
+      - prometheus-net
     extends:
       file: docker-compose.base.yml
       service: base
