@@ -5,6 +5,7 @@ networks:
 
 services:
   cadvisor:
+    container_name: "${CONTAINER_NAME_PREFIX:-}cadvisor"
     image: gcr.io/cadvisor/cadvisor:v0.51.0
     restart: unless-stopped
     privileged: true
