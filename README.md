@@ -1,4 +1,4 @@
-# infra__observability__cadvisor
+# cadvisor
 
 ## Структура Compose
 
